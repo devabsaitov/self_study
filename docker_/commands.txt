@@ -1,0 +1,339 @@
+1) https://docs.docker.com/engine/install/ubuntu/
+2) https://docs.docker.com/desktop/install/ubuntu/
+(Mac:https://medium.com/crowdbotics/a-complete-one-by-one-guide-to-install-docker-on-your-mac-os-using-homebrew-e818eb4cfc3)
+
+3) https://docs.docker.com/desktop/get-started/#credentials-management-for-linux-users (sign in)
+4) https://phoenixnap.com/kb/docker-run-command-with-examples
+5) https://pandorafms.com/blog/docker-run/
+
+6) https://www.guru99.com/docker-tutorial.html (docker ni foydasi)
+7) https://vmware.github.io/vic-product/assets/files/html/1.1/vic_app_dev/container_operations.html
+8) https://www.baeldung.com/linux/
+
+9) https://docs.docker.com/engine/reference/builder/#:~:text=Docker%20can%20build%20images%20automatically,line%20to%20assemble%20an%20image (Dockerfile)
+10) https://www.tutorialspoint.com/docker/docker_file.htm
+11) https://geekflare.com/dockerfile-tutorial/
+12) write in Dockerfile
+        FROM python:3.11-alpine
+        RUN mkdir /app
+        WORKDIR /app
+        COPY requirements.txt /app/
+
+13) https://pythonspeed.com/articles/alpine-docker-python/
+
+
+1073  sudo docker run hello-world
+ 1074  docker --version
+ 1075  docker
+ 1076  docker run
+ 1077  docker history
+ 1078  docker container create test
+ 1079  dir
+ 1080  systemctl status docker.service
+ 1081  docker ps
+ 1082  sudo group docker
+ 1083  sudo usermod -aG docker $USER
+ 1084  sudo groupadd docker
+ 1085  sudo usermod -aG docker $USER
+ 1086  sudo systemctl restart docker
+ 1087  sudo reboot
+ 1088  docker ps
+ 1089  docker login
+ 1090  docker pull python
+ 1091  docker pull python:3.11-alpine
+ 1092  docker run --name test_uchun python
+ 1093  docker run --name test_uchun python:3.11-alpine
+ 1094  docker ps -a
+ 1095  docker rm
+ 1096  docker rm test_uchun
+ 1097  docker ps -a
+ 1098  docker rm hello-world
+ 1099  docker rm competent_fermat
+ 1100  docker ps -a
+ 1101  docker -a
+ 1102  docker -d
+ 1103  docker images -a
+ 1104  docker images ls
+ 1105  docker images -a
+ 1106  docker images rm hello-world
+ 1107  docker images --help
+ 1108  docker images rm hello-world
+ 1109  docker image rm hello-world
+ 1110  docker image --help
+ 1111  docker images
+ 1112  docker images -a
+ 1113  docker --version
+ 1114  docker version
+ 1115  docker container --help
+ 1116  docker images -a
+ 1117  docker image rm python:3.11-alpine
+ 1118  docker images -a
+ 1119  docker pull python:3.11-alpine
+ 1120  docker images -a
+ 1121  docker run --name container_1 python:3.11-alpine
+ 1122  docker container
+ 1123  docker container -a
+ 1124  docker container ls
+ 1125  docker container lscp
+ 1126  docker container cp
+ 1127  docker containers -a
+ 1128  docker containers ps
+ 1129  docker container ps
+ 1130  docker run --name container_1 --help
+ 1131  docker containers
+ 1132  docker containers ps
+ 1133  docker container ps
+ 1134  docker run --name container_1 python:3.11-alpine
+ 1135  docker ps -a
+ 1136  docker run -d --name container_1_d python:3.11-alpine
+ 1137  docker ps -a
+ 1138  docker pull test:3.11-alpine
+ 1139  docker pull --help
+ 1140  docker pull -a test:3.11-alpine
+ 1141  docker pull test:3.11-alpine
+ 1142  docker login
+ 1143  sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+ 1144  docker ps -a
+ 1145  sudo docker rm f0
+ 1146  docker ps
+ 1147  docker ps -a
+ 1148  docker ps
+ 1149  docker rm container_1
+ 1150  docker ps
+ 1151  docker ps -a
+ 1152  docker run --name con_1 -it python:3.11-alpine
+ 1153  docker start con_1
+ 1154  docker ps
+ 1155  docker run -d --name con_1_d -it python:3.11-alpine
+ 1156  docker ps
+ 1157  docker exec -it con_1 python
+ 1158  docker exec -it con_1 sh
+ 1159  touch test.txt
+ 1160  echo "hello world" > test.txt
+ 1161  cat test.txt
+ 1162  docker cp test.txt con_1:/test/
+ 1163  docker exec -it con_1 sh
+ 1164  docker stop con_1
+ 1165  docker stop con_1_d
+ 1166  docker ps
+ 1167  docker ps -a
+ 1168  docker rm con_1
+ 1169  docker rm con_1_d
+ 1170  docker ps -a
+ 1171  docker run -d --name test1 python:3.11-alpine
+ 1172  docker run -d --name test2 python:3.11-alpine
+ 1173  docker run -d --name test3 python:3.11-alpine
+ 1174  docker exec -it test1 sh
+ 1175  docker start test1
+ 1176  docker exec -it test1 sh
+ 1177  docker rm test1
+ 1178  docker rm test2
+ 1179  docker rm test3
+ 1180  docker run -d --name test1 -it python:3.11-alpine
+ 1181  docker run -d --name test2 -it python:3.11-alpine
+ 1182  docker run -d --name test3 -it python:3.11-alpine
+ 1183  docker exec -it test1 sh
+ 1184  docker exec -it test2 sh
+ 1185  docker exec -it test3 sh
+ 1186  docker exec -it test1 sh
+ 1187  sqlite3
+ 1188  pip install sqlite3
+ 1189  python3 -m pip install --upgrade pip
+ 1190  pip install sqlite3
+ 1191  sqlite3
+ 1192  sudo apt install sqlite3
+ 1193  sqlite3
+ 1194  sqlite3 my.db
+ 1195  poweroff
+ 1196  sqlite3 my.db
+ 1197  dir
+ 1198  cd Desktop/
+ 1199  fir
+ 1200  dir
+ 1201  cd ..
+ 1202  dir
+ 1203  ls
+ 1204  cd PycharmProjects/
+ 1205  dir
+ 1206  cd P13_group/
+ 1207  DIR
+ 1208  dir
+ 1209  sqlite3 my.db
+ 1210  sqlite3
+ 1211  sqlite3 --version
+ 1212  dir
+ 1213  cd PycharmProjects/
+ 1214  dir
+ 1215  cd P13_group/
+ 1216  dir
+ 1217  sqlite3 my.db
+ 1218  poweroff
+ 1219  touch test1.txt
+ 1220  touch test2.txt test3.txt
+ 1221  ls
+ 1222  cat Dockerfile
+ 1223  nano Dockerfile
+ 1224  docker build -it test1_image .
+ 1225  docker build -t test1_image .
+ 1226  nano Dockerfile
+ 1227  docker build -t test2_image .
+ 1228  nano Dockerfile
+ 1229  docker build -t test3_image .
+ 1230  docker image ls
+ 1231  docker image rm my_image:latest
+ 1232  docker image rm my_image
+ 1233  docker images
+ 1234  docker image ls
+ 1235  docker image rm 10b
+ 1236  docker ps -a
+ 1237  docker ps
+ 1238  docker stop my_container
+ 1239  docker rm my_container
+ 1240  docker image rm my_image:latest
+ 1241  docker image ls
+ 1242  docker run -d --name test1_con test1_image
+ 1243  docker rm test1_con
+ 1244  docker run -d --name test1_con -it test1_image
+ 1245  clear
+ 1246  docker exec -it test2_con sh
+ 1247  docker run -d --name test2_con -it test2_image
+ 1248  clear
+ 1249  docker exec -it test3_con sh
+ 1250  docker --version
+ 1251  docker ps
+ 1252  docker run -d --name test2 -it conatiner
+ 1253  docker run -d --name test2 -it python:3.11-alpine
+ 1254  docker run --help
+ 1255  docker run -d --name test2 -it
+ 1256  history
+ 1257  docker ps -a
+ 1258  docker rm test1
+ 1259  docker ps -a
+ 1260  docker start test2
+ 1261  docker ps
+ 1262  docker stop test2
+ 1263  dir
+ 1264  cd PycharmProjects/
+ 1265  cd p11_group/
+ 1266  touch Dockerfile
+ 1267  nano
+ 1268  nano Dockerfile
+ 1269  cd ..
+ 1270  history
+ 1271  docker images python:3.11-alpine
+ 1272  docker images rm python:3.11-alpine
+ 1273  docker images --help
+ 1274  docker images ls
+ 1275  docker images -a
+ 1276  docker images ls
+ 1277  docker images -a
+ 1278  docker image ls
+ 1279  docker image rm 4665a951a37e
+ 1280  docker image ls
+ 1281  cd /
+ 1282  ls
+ 1283  docker ls
+ 1284  docker ps
+ 1285  docker ps -a
+ 1286  docker image rm my_container:latest
+ 1287  docker image ls
+ 1288  cd Py
+ 1289  dir
+ 1290  cd home/
+ 1291  dir
+ 1292  cd dilshod/
+ 1293  cd PycharmProjects/
+ 1294  cd p11_group/
+ 1295  docker build -t my_image .
+ 1296  docker image ls
+ 1297  docker run -d --name my_container my_image
+ 1298  docker ps
+ 1299  docker start my_container
+ 1300  docker ps
+ 1301  docker start my_container
+ 1302  docker rm my_container
+ 1303  docker run -d --name my_container -it my_image
+ 1304  docker ps
+ 1305  docker exec -t my_container
+ 1306  docker exec --help
+ 1307  docker exec -d my_container
+ 1308  history
+ 1309  docker exec --help
+ 1310  docker exec -it my_container sh
+ 1311  clear
+ 1312  docker run -d --name test3_con -it test3_image
+ 1313  docker ps
+ 1314  clear
+ 1315  docker exec -it test1_con sh
+ 1316  docker ps
+ 1317  docker stop *
+ 1318  docker stop test1_con test2_con test3_con
+ 1319  docker ps
+ 1320  docker rm test1_con test2_con test3_con
+ 1321  docker ps -a
+ 1322  docker rm test2 test3
+ 1323  docker image ls
+ 1324  docker image test1_image
+ 1325  docker image rm test1_image
+ 1326  docker image rm test2_image
+ 1327  docker image rm test3_image
+ 1328  docker image ls
+ 1329  cd ..
+ 1330  cd docker_tg_bot/
+ 1331  . venv/bin/activate
+ 1332  pip install aiogram
+ 1333  pip freeze > requirements
+ 1334  pip freeze > requirements.txt
+ 1335  ls
+ 1336  rm requirements
+ 1337  ls
+ 1338  touch Dockerfile
+ 1339  nano Dockerfile
+ 1340  docker image ls
+ 1341  docker build -t bot_img .
+ 1342  nano Dockerfile
+ 1343  docker build -t bot_img .
+ 1344  nano Dockerfile
+ 1345  docker image ls
+ 1346  docker build -t bot_img .
+ 1347  nano Dockerfile
+ 1348  docker build -t bot_img .
+ 1349  nano Dockerfile
+ 1350  docker build -t bot_img .
+ 1351  docker image ls
+ 1352  docker run --name tgbot_con -it bot_img
+ 1353  nano Dockerfile
+ 1354  docker run --name tgbot_con -it bot_img
+ 1355  docker ps
+ 1356  docker ps -a
+ 1357  docker rm tgbot_con
+ 1358  docker run --name tgbot_con -it bot_img
+ 1359  docker image rm bot_img
+ 1360  docker rm tgbot_con
+ 1361  docker image rm bot_img
+ 1362  clear
+ 1363  ls
+ 1364  docker image ls
+ 1365  docker build -t bot_img .
+ 1366  docker image ls
+ 1367  docker run --name tg_con -it bot_img
+ 1368  nano Dockerfile
+ 1369  docker start tg_con
+ 1370  docker stop tg_con
+ 1371  pip install aiogram
+ 1372  poweroff
+ 1373  docker ps
+ 1374  dir
+ 1375  docker image ls
+ 1376  cd PycharmProjects/
+ 1377  dir
+ 1378  poweroff
+ 1379  sudo apt-get update
+ 1380  sudo apt upgrade
+ 1381  nano history
+ 1382  history
+
+
+ --------------------------------------------------------------------------
+
+ https://medium.com/@knoldus/self-hosted-deployment-of-sentry-over-aws-43e6bff8fd7c       <- docker-compose

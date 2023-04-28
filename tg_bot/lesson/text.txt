@@ -1,0 +1,35 @@
+bcrypt + pg + psycopg2
+
+1. login
+    -username
+    -password
+2. register
+    -name
+    -username
+    -password
+    -year
+
+3. exit
+
+users, product, order
+
+
+client (default balance 5000)
+    1. buy product
+    2. check balance
+    3. history
+    4. exit
+
+merchant
+    1. show all products (id, name, price)
+    2. show product (id, name, price, amount)
+    3. my added products
+    4. add product
+    5. remove product
+    6. change product
+    7. report
+        1. daily
+        2. weekly
+        3. monthly
+    8. send report (jami sotilgan pruductlar soni va qancha savdo bo'lgani pochtasiga yuboriladi)
+    9. exit
